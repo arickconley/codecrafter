@@ -1,0 +1,87 @@
+
+--- 2023-11-21T23:45:17.543Z debug
+🐛 Writing logs to ".wrangler/logs/wrangler-2023-11-21_23-45-17_403.log"
+---
+
+--- 2023-11-21T23:45:17.543Z debug
+Failed to load .env file ".env": Error: ENOENT: no such file or directory, open '.env'
+    at Object.open (node:internal/fs/sync:78:18)
+    at Object.openSync (node:fs:565:17)
+    at Object.readFileSync (node:fs:445:35)
+    at tryLoadDotEnv (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:122671:72)
+    at loadDotEnv (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:122680:12)
+    at /root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:146614:20
+    at /root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:130116:16
+    at maybeAsyncResult (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:128337:44)
+    at /root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:130115:14
+    at /root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:128324:22 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '.env'
+}
+---
+
+--- 2023-11-21T23:45:17.593Z warn
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNo compatibility_date was specified. Using today's date: 2023-11-21.[0m
+
+  Pass it in your terminal:
+  ```
+  --compatibility-date=2023-11-21
+  ```
+  See [4mhttps://developers.cloudflare.com/workers/platform/compatibility-dates/[0m for more information.
+
+
+---
+
+--- 2023-11-21T23:45:17.594Z log
+No functions. Shimming...
+---
+
+--- 2023-11-21T23:45:17.607Z log
+ ⛅️ wrangler 3.17.0
+[38;5;214m-------------------[39m
+---
+
+--- 2023-11-21T23:45:17.609Z warn
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1m--local is no longer required and will be removed in a future version.[0m
+
+  `wrangler dev` now uses the local Cloudflare Workers runtime by default. 🎉
+
+
+---
+
+--- 2023-11-21T23:45:17.626Z debug
+Retrieving cached values for userId from node_modules/.cache/wrangler
+---
+
+--- 2023-11-21T23:45:17.626Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"type":"event","name":"run dev","properties":{"local":true,"usesTypeScript":true}}.
+---
+
+--- 2023-11-21T23:45:17.627Z debug
+Failed to load .env file "/root/Code/ciphey/.dev.vars": Error: ENOENT: no such file or directory, open '/root/Code/ciphey/.dev.vars'
+    at Object.open (node:internal/fs/sync:78:18)
+    at Object.openSync (node:fs:565:17)
+    at Object.readFileSync (node:fs:445:35)
+    at tryLoadDotEnv (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:122671:72)
+    at loadDotEnv (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:122680:12)
+    at getVarsForDev (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:150297:18)
+    at getBindings (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:151219:10)
+    at getBindingsAndAssetPaths (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:151176:20)
+    at getDevReactElement (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:150840:40)
+    at startDev (/root/.local/share/pnpm/global/5/.pnpm/wrangler@3.17.0/node_modules/wrangler/wrangler-dist/cli.js:150903:60) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/root/Code/ciphey/.dev.vars'
+}
+---
+
+--- 2023-11-21T23:45:17.688Z log
+[2m⎔ Starting local server...[22m
+---
+
+--- 2023-11-21T23:45:18.016Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"type":"event","name":"run pages dev","properties":{}}.
+---
