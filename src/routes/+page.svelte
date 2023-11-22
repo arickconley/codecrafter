@@ -104,13 +104,13 @@
 <div class="flex-1 flex flex-col gap-8 w-full items-center print:top-10 print:absolute">
 	<textarea
 		rows="5"
-		class="rounded-xl bg-white/10 py-2 px-3 resize-none w-3/4 text-xl font-bold tracking-wider print:hidden"
+		class="rounded-xl bg-white/10 py-2 px-3 resize-none w-3/4 text-xl font-bold tracking-wider print:hidden transition-all focus:scale-105"
 		bind:value={message}
 	></textarea>
 
 	<div class="flex justify-between flex-1 w-full">
 		<div class="flex-1">
-			<div class="flex flex-wrap flex-1 overflow-x-scroll overflow-y-hidden">
+			<div class="flex flex-wrap gap-y-2 flex-1 overflow-x-scroll overflow-y-hidden">
 				{#each words as word}
 					<div class="flex gap-2 mr-8">
 						{#each word as letter}
@@ -129,12 +129,12 @@
 				{/each}
 			</div>
 		</div>
-		<div class="md:flex flex-col justify-between font-normal hidden print:flex">
+		<div class="md:grid grid-cols-2 items-center font-normal hidden print:grid">
 			{#each legend as icon}
-				<div class="flex justify-center items-center">
-					<span class="px-2">{icon.character}</span>
-					<span class="material-symbols-outlined text-3xl print:text-black">{icon.icon}</span>
-				</div>
+				<span class="px-2">{icon.character}</span>
+				<span class="material-symbols-outlined text-3xl print:text-black print:text-2xl"
+					>{icon.icon}
+				</span>
 			{/each}
 		</div>
 	</div>
