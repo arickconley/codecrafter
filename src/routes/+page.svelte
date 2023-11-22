@@ -97,9 +97,7 @@
 	<span class="absolute material-symbols-outlined animate-ping text-blue-200">print</span>
 </button>
 
-<h1
-	class="text-2xl pt-2 print:pt-0 print:self-start bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-500 print:text-black print:bg-white"
->
+<h1 class="text-2xl pt-2 print:pt-0 print:self-start print:text-black print:bg-white print:mt-0">
 	CodeCrafter <span class="text-sm block text-center print:inline-block">by Arick Conley</span>
 </h1>
 
@@ -131,7 +129,7 @@
 				{/each}
 			</div>
 		</div>
-		<div class="md:flex flex-col justify-between font-normal max-h-screen hidden">
+		<div class="md:flex flex-col justify-between font-normal hidden print:flex">
 			{#each legend as icon}
 				<div class="flex justify-center items-center">
 					<span class="px-2">{icon.character}</span>
