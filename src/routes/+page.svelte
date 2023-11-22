@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	const icons = [
 		'settings',
 		'grade',
@@ -87,8 +89,18 @@
 	$: words = message.split(' ');
 </script>
 
-<h1 class="text-2xl pt-2 print:pt-0 print:self-start">
-	CodeCrafter <span class="text-sm hidden print:inline-block">by Arick Conley</span>
+<button
+	on:click={() => window.print()}
+	class="fixed left-4 top-4 p-2 bg-blue-600 rounded-full flex justify-center items-center print:hidden"
+>
+	<span class="material-symbols-outlined text-blue-100">print</span>
+	<span class="absolute material-symbols-outlined animate-ping text-blue-200">print</span>
+</button>
+
+<h1
+	class="text-2xl pt-2 print:pt-0 print:self-start bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-500 print:text-black"
+>
+	CodeCrafter <span class="text-sm block text-center print:inline-block">by Arick Conley</span>
 </h1>
 
 <div class="flex-1 flex flex-col gap-8 w-full items-center print:top-10 print:absolute">
@@ -102,16 +114,16 @@
 		<div class="flex-1">
 			<div class="flex flex-wrap flex-1 overflow-x-scroll overflow-y-hidden">
 				{#each words as word}
-					<div class="flex gap-2 mr-6">
+					<div class="flex gap-2 mr-8">
 						{#each word as letter}
 							<div class="flex flex-col text-4xl">
 								{#if legend.find((value) => value.character == letter.toUpperCase())}
-									<span class="h-16 w-12 border-b-2 border-blue-900"></span>
-									<span class="material-symbols-outlined text-5xl pt-1">
+									<span class="border-b-2 h-12 border-blue-900"></span>
+									<span class="material-symbols-outlined text-3xl md:text-5xl pt-1">
 										{legend.find((value) => value.character == letter.toUpperCase())['icon']}
 									</span>
 								{:else}
-									<span class="h-4 w-12">{letter}</span>
+									<span class="">{letter}</span>
 								{/if}
 							</div>
 						{/each}
@@ -119,7 +131,7 @@
 				{/each}
 			</div>
 		</div>
-		<div class="flex flex-col justify-between font-normal max-h-screen">
+		<div class="md:flex flex-col justify-between font-normal max-h-screen hidden">
 			{#each legend as icon}
 				<div class="flex justify-center items-center">
 					<span class="px-2">{icon.character}</span>
