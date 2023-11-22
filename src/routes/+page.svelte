@@ -98,7 +98,7 @@
 </button>
 
 <h1
-	class="text-2xl pt-2 print:pt-0 print:self-start bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-500 print:text-black"
+	class="text-2xl pt-2 print:pt-0 print:self-start bg-clip-text text-transparent bg-gradient-to-br from-green-500 to-blue-500 print:text-black print:bg-white"
 >
 	CodeCrafter <span class="text-sm block text-center print:inline-block">by Arick Conley</span>
 </h1>
@@ -135,7 +135,7 @@
 			{#each legend as icon}
 				<div class="flex justify-center items-center">
 					<span class="px-2">{icon.character}</span>
-					<span class="material-symbols-outlined text-3xl">{icon.icon}</span>
+					<span class="material-symbols-outlined text-3xl print:text-black">{icon.icon}</span>
 				</div>
 			{/each}
 		</div>
