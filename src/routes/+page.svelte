@@ -34,7 +34,7 @@
 				stroke-miterlimit="2"
 				clip-rule="evenodd"
 				viewBox="0 0 347 699"
-				class="absolute w-48 md:w-96 top-0 left-[30%]"
+				class="absolute w-48 md:w-96 top-0 left-0 right-0 m-auto"
 				><path
 					fill="#00b2ff"
 					d="M165 685C117 640 2 488 0 398c-2-89 142-206 152-250 6-32-95-14-95-14L290 0l57 213s-78-46-106-23C204 220 82 317 81 
